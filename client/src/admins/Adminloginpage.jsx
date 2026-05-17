@@ -6,7 +6,7 @@ export const Adminloginpage = () =>{
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const res = await fetch(`https://motherhelptrustv4.onrender.com/mht/admin`);
+                const res = await fetch(`${API}/mht/admin`);
                 const json = await res.json();
                 setData(json);
             } catch (error) {
