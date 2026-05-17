@@ -3,6 +3,6 @@ const {handleAdminLogin} = require("../controller/controller_adminlogin");
 
 const router_admin = express.Router();
 
-router_admin.post("/admin",handleAdminLogin);
+router_admin.get("/admin",handleAdminLogin);
 
 module.exports = {router_admin};

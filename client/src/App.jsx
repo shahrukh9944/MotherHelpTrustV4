@@ -2,6 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
+import {Adminloginpage} from './admins/Adminloginpage'
 // import './App.css'
 
 function App() {
@@ -10,6 +11,8 @@ function App() {
   return (
     <>
       <div> Mother Help Trust</div>
+      {<Adminloginpage/>}
+      
     </>
   )
 }

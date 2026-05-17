@@ -1,4 +1,5 @@
 const express = require("express");
+const cors = require("cors");
 const { router_admin } = require("./router/router_admin");
 require('dotenv').config();
 
@@ -7,6 +8,9 @@ const app = express();
 const PORT = process.env.PORT || 4000;
 
 app.use(express.json());
+app.use(cors({
+    origin: "*"
+}));
 
 app.get("/",(req,res)=>{
     res.status(400).send("Weclome to Server");
